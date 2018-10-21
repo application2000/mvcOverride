@@ -126,8 +126,8 @@ class PlgSystemMVCOverride extends JPlugin
 			{
 				if ($hasOption)
 				{
-					JViewLegacy::addViewHelperPath($codePool . '/' . $option);
-					JViewLegacy::addViewTemplatePath($codePool . '/' . $option);
+					JViewLegacy::addHelperPath($codePool . '/' . $option);
+					JViewLegacy::addTemplatePath($codePool . '/' . $option);
 					JTable::addIncludePath($codePool . '/' . $option . '/tables');
 					JModelForm::addComponentFormPath($codePool . '/' . $option . '/models/forms');
 					JModelForm::addComponentFieldPath($codePool . '/' . $option . '/models/fields');
