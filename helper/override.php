@@ -114,7 +114,7 @@ abstract class MVCOverrideHelperOverride
 	{
 		if (!empty($bufferContent))
 		{
-			eval('?>' . $bufferContent . PHP_EOL . '?>');
+			eval('?>' . $bufferContent . PHP_EOL);
 		}
 	}
 }
